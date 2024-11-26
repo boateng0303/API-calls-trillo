@@ -1,7 +1,7 @@
 import urllib.request
 import json
 
-def get_weather(city='toronto', api_key='a3b687359088681dfb5d34e32f37cab7'):
+def get_weather(city='toronto', api_key=''):
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
     request = urllib.request.urlopen(url)
     result = json.loads(request.read())
